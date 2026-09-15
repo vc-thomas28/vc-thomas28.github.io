@@ -1,7 +1,19 @@
+html {
+    background-image: bottom, white 0%, #facd8a 100%
+}
 body {
+    width: 1000;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    margin-left: 10px;
+    margin: 15px, auto;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background-image:url ("../images/images.jpeg");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 a:focus, a:hover {
     font-style: italic;
@@ -19,6 +31,7 @@ header h2{
 }
 header img {
     float: left;
+    margin-left: 0; 
 }
 .shadow {
     text-shadow: 2px 2px 2px rgb(19, 30, 52);
@@ -27,8 +40,26 @@ main {
     clear: left;
 }
 main h3 {
-    margin-top: 3em;
+    margin: 3em 2em 1.5em 2em;
+    border: 5px double skyblue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px lightgray;
+    padding: 1em;
     font-size: 105%;
+}
+main nav {
+    margin: 1.5em 2em 1.5em;
+    border: 5px dashed skyblue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px lightgray;
+    padding: 0.5em;
+}
+main div.contact {
+    margin: 1.5em 2em 0 2em;
+    border: 5px dotted skyblue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px lightgray;
+    padding: 1em;
 }
 #list {
     line-height: 1.5em;
