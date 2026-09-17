@@ -2,16 +2,16 @@ html {
     background-image: bottom, white 0%, #facd8a 100%
 }
 body {
-    width: 1000;
+    width: 1000px;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    margin: 15px, auto;
+    margin: 15px auto;
     padding: 15px 1.5em;
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
-    background-image:url ("../images/images.jpeg");
+    background-image:url("../images/images.jpeg");
     background-repeat: repeat-y;
     background-attachment: fixed;
 }
