@@ -69,3 +69,14 @@ footer {
     clear: both;
     border-top: 2px solid black;
 }
+p.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    background-color: cornflowerblue;
+    border: 1px solid navy;
+    padding: 8px 12px;
+    margin: 0;
+    z-index: 1000;
+}
