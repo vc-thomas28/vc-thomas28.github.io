@@ -7,12 +7,12 @@ body {
     font-size: 100%;
     margin: 15px auto;
     padding: 15px auto;
-    border: 1px solid navy;
+    border: 1px solid rgb(125, 160, 230);
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
     background: url("/images/deep\ blue.jpeg") right repeat-y;
     background-attachment: fixed;
-    background-color: rgb(25, 53, 61);
+    background-color: rgb(156, 214, 230);
 }
 a:focus, a:hover {
     font-style: italic;
@@ -34,14 +34,14 @@ header img {
     float: left;
 }
 .shadow {
-    text-shadow: 2px 2px 2px rgb(86, 175, 171);
+    text-shadow: 2px 2px 2px rgb(162, 204, 202);
 }
 article {
     clear: left;
     width: 70%;
     float: left;
     column-count: 2;
-    column-rule: 2px dotted rgb(1, 59, 78);
+    column-rule: 2px dotted rgb(3, 138, 184);
     column-gap: 2em;
     margin-left: 2em;
 }
