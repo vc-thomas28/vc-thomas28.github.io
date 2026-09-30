@@ -75,7 +75,7 @@ p.fixed {
     right: 10px;
     width: auto;
     background-color: cornflowerblue;
-    border: 1px solid navy;
+    border: 1px solid rgb(78, 78, 120);
     padding: 8px 12px;
     margin: 0;
     z-index: 1000;
