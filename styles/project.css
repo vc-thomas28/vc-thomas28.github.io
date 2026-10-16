@@ -30,8 +30,8 @@ header h1 {
     color: rgb(55, 158, 232);
 }
 header h2 {
-font-size: 130%;
-color: lightslategray;
+    font-size: 130%;
+    color: lightslategray;
 }
 header img {
     float: left;
