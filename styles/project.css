@@ -32,6 +32,8 @@ text-indent: 30px;
 }
 header img {
     float: left;
+    margin-right: 1.5em;
+    margin-bottom: 0.5em;
 }
 .shadow {
     text-shadow: 2px 2px 2px rgb(162, 204, 202);
@@ -68,7 +70,6 @@ aside {
 }
 footer {
     clear: both;
-    border-top: 2px solid gray;
 }
 p.fixed {
     position: fixed;
