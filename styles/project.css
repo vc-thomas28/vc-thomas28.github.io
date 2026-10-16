@@ -21,7 +21,7 @@ a:focus, a:hover {
     border-style: dotted solid;
 }
 header {
-    border-bottom: 2px gray;
+    border-bottom: 2px solid gray;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
