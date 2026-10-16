@@ -29,8 +29,6 @@ header h2 {
 font-size: 130%;
 color: lightslategray;
 text-indent: 30px;
-border-top: 2px solid maroon;
-padding-top: 5px;
 }
 header img {
     float: left;
@@ -43,12 +41,14 @@ article {
     width: 70%;
     float: left;
     column-count: 2;
-    column-rule: 2px dotted maroon;
+    column-rule: 2px dotted gray;
     column-gap: 2em;
     margin-left: 2em;
 }
 article h3 {
     column-span: all;
+    border-top: 2px solid gray;
+    padding-top: 5px;
 }
 article img {
     float: left;
