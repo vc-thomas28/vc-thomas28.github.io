@@ -13,15 +13,20 @@ body {
     position: relative;
 }
 
+header {
+    border-bottom: 2px solid green;
+}
+
 #nav_menu {
-    border-top: 2px solid green;
     background-color: white;
+    padding: 1em 0;
+    text-align: center;
 }
 
 #nav_menu ul {
     list-style-type: none;
-    text-align: center;
-    padding: 1em 0;
+    margin: 0;
+    padding: 0;
 }
 
 #nav_menu ul li {
@@ -50,7 +55,7 @@ main {
 }
 
 article {
-    width: 630px;
+    width: 620px;
     float: left;
 }
 
@@ -105,18 +110,20 @@ video {
 }
 
 aside {
-    width: 280%;
+    width: 260px;
     background-color: lightgreen;
     border: 1px solid #454444;
     padding: 15px;
     position: fixed;
-    top: 80px;
-    right: 20px;
+    top: 40px;
+    right: calc((100% - 960px) / 2 + 15px);
     z-index: 100;
 }
 
-#side_nav ul{
+#side_nav ul {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 #side_nav li {
