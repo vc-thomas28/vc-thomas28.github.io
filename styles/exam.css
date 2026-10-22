@@ -89,7 +89,7 @@ article section p::first-letter {
     float: left;
     line-height: 0.8;
     margin-right: 0.1em;
-    color: green;
+    color: #7e0914;;
 }
 
 article img {
