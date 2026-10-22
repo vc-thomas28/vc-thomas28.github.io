@@ -1,0 +1,166 @@
+html {
+    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+    background-attachment: fixed;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    width: 960px;
+    background-color: white;
+    margin: 15px auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+#nav_menu {
+    border-top: 2px solid green;
+    background-color: white;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0 2em;
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: green;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+#nav_menu ul li a:hover
+#nav_menu ul li a:focus
+#nav_menu ul li a.current {
+    color: #7e0914;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+article {
+    width: 630px;
+    float: left;
+}
+
+h1 {
+    font-size: 170%;
+    color: green;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 130%;
+    color: green;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid green;
+    padding-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 110%;
+    color: green;
+    margin-top: 0.8em;
+    margin-bottom: 0.3em;
+}
+
+p {
+    font-size: 90%;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+article > section > p::first-letter {
+    font-size: 250%;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 0.1em;
+    color: green;
+}
+
+article img {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    border: 1px solid #cccccc;
+}
+
+video { 
+    display: block;
+    margin: 1em 0;
+    border: 1px solid #cccccc;
+}
+
+aside {
+    width: 270%;
+    background-color: lightgreen;
+    border: 1px solid #454444;
+    padding: 15px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 100;
+}
+
+#side_nav ul{
+    list-style: none;
+}
+
+#side_nav li {
+    font-size: 90%;
+    margin-bottom: 0.4em;
+}
+
+#side_nav ul ul {
+    margin-left: 1.2em;
+}
+
+#side_nav a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#side_nav a:hover {
+    text-decoration: underline;
+}
+
+aside p {
+    margin-top: 1em;
+    font-size: 85%;
+}
+
+aside p a {
+    color: blue;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid green;
+    padding: 1em 20px;
+    text-align: right;
+    background-color: white;
+}
+
+footer p {
+    font-size: 80%;
+    margin: 0;
+}
+
+footer a {
+    color: green;
+    font-weight: bold;
+}
