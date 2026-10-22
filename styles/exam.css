@@ -50,8 +50,8 @@ header {
 #nav_menu ul li a.current,
 #nav_menu ul li a:hover,
 #nav_menu ul li a:focus {
-    background-color: #e2e228;
-    color: green;
+    background-color: green;
+    color: #e2e228;
 }
 
 main {
