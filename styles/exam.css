@@ -36,8 +36,8 @@ body {
     font-size: 110%;
 }
 
-#nav_menu ul li a:hover
-#nav_menu ul li a:focus
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus,
 #nav_menu ul li a.current {
     color: #7e0914;
     text-decoration: underline;
@@ -83,7 +83,7 @@ p {
     text-align: justify;
 }
 
-article > section > p::first-letter {
+article section p:first-of-type::first-letter {
     font-size: 250%;
     font-weight: bold;
     float: left;
@@ -105,7 +105,7 @@ video {
 }
 
 aside {
-    width: 270%;
+    width: 280%;
     background-color: lightgreen;
     border: 1px solid #454444;
     padding: 15px;
