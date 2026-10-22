@@ -18,18 +18,19 @@ body {
 }
 
 header {
-    border-bottom: 2px solid green;
+    border-bottom: none;
 }
 
 #nav_menu {
     background-color: white;
-    padding: 12px 0;
+    padding: 0;
     text-align: center;
 }
 
 #nav_menu ul {
     list-style-type: none;
-    padding: 1em 0;
+    padding: 0.8em 0;
+    margin: 0;
     text-align: center;
     border-top: 2px solid green;
     border-bottom: 2px solid green;
@@ -60,7 +61,7 @@ main {
 }
 
 article {
-    width: 630px;
+    width: 660px;
     float: left;
 }
 
@@ -90,17 +91,14 @@ h3 {
 }
 
 article section p {
-    column-count: 3;
-    column-gap: 18px;
-    column-rule: 1px none;
     font-size: 85%;
     line-height: 1.45;
     text-align: justify;
     margin-bottom: 1em;
 }
 
-main p:first-child::first-letter {
-    font-size: 150%;
+.drop-cap {
+    font-size: 250%;
     font-weight: bold;
     float: left;
     line-height: 0.8;
@@ -125,11 +123,13 @@ aside {
     background-color: lightgreen;
     border: 1px solid #454444;
     padding: 15px;
-    float: right; 
-    margin-right: 20px;
+    position: fixed;
+    top: 140px;
+    right: calc(50% - 480px + 20px);
+    z-index: 100;
 }
 
-#side_nav ul{
+#side_nav ul {
     list-style: disc;
     padding-left: 1.2em;
     margin: 0;
