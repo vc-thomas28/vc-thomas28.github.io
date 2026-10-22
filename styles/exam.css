@@ -83,7 +83,7 @@ p {
     text-align: justify;
 }
 
-article section p:first-of-type::first-letter {
+article section p::first-letter {
     font-size: 250%;
     font-weight: bold;
     float: left;
