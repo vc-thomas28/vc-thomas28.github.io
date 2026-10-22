@@ -12,45 +12,46 @@ body {
     background-color: white;
     margin: 15px auto;
     border: 1px solid black;
+    border-radius: 25px; 
+    box-shadow: 5px 5px 0 0; 
     position: relative;
 }
 
 header {
-    padding: 10px 0;
+    border-bottom: none;
 }
 
 #nav_menu {
     background-color: white;
+    padding: 0;
     text-align: center;
 }
 
 #nav_menu ul {
     list-style-type: none;
+    padding: 0.8em 0;
     margin: 0;
-    padding: 0;
+    text-align: center;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
 }
 
 #nav_menu ul li {
-    display: inline-block;
-    margin: 0 5px;
+    display: inline;
+    padding: 0 1.5em;
 }
 
 #nav_menu ul li a {
-    display: block;
-    padding: 8px 30px;
-    background-color: #006400; /* Dark green button */
-    color: white;
     font-weight: bold;
+    color: green;
     text-decoration: none;
-    font-size: 110%;
-    border-radius: 3px;
 }
 
 #nav_menu ul li a.current,
 #nav_menu ul li a:hover,
 #nav_menu ul li a:focus {
-    background-color: #004d00;
-    color: #ffff00; /* Yellow text for active/hover state */
+    color: #e2e228;
+    text-decoration: none;
 }
 
 main {
@@ -60,29 +61,31 @@ main {
 }
 
 article {
-    width: 650px;
+    width: 660px;
     float: left;
 }
 
 h1 {
-    font-size: 180%;
-    color: #006400;
-    margin-top: 5px;
+    font-size: 170%;
+    color: green;
+    margin-top: 0;
     margin-bottom: 0.4em;
-    border-top: 2px solid #006400;
+    border-top: 2px solid #2d7e32;
     padding-top: 0.3em;
 }
 
 h2 {
-    font-size: 140%;
-    color: #006400;
+    font-size: 130%;
+    color: green;
     margin-top: 1em;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid green;
+    padding-bottom: 0.2em;
 }
 
 h3 {
-    font-size: 115%;
-    color: #006400;
+    font-size: 110%;
+    color: green;
     margin-top: 0.8em;
     margin-bottom: 0.3em;
 }
@@ -90,21 +93,20 @@ h3 {
 article section p {
     column-count: 3;
     column-gap: 18px;
+    column-rule: 1px none;
     font-size: 85%;
     line-height: 1.45;
     text-align: justify;
     margin-bottom: 1em;
 }
 
-article section p::first-letter {
-    font-size: 280%;
-    font-family: 'Georgia', 'Times New Roman', serif;
-    font-style: italic;
+.drop-cap {
+    font-size: 250%;
     font-weight: bold;
     float: left;
     line-height: 0.8;
-    margin-right: 0.1em;
-    color: #800080; /* Purple/Magenta drop-cap matching screenshot */
+    margin-right: 0.12em;
+    color: #7e0914;
 }
 
 article img {
@@ -115,53 +117,46 @@ article img {
 
 video { 
     display: block;
-    width: 100%;
-    max-width: 300px;
     margin: 1em 0;
     border: 1px solid #cccccc;
 }
 
 aside {
-    width: 210px;
-    background-color: #90ee90; /* Bright light-green box */
-    border: 1px solid black;
+    width: 240px;
+    background-color: lightgreen;
+    border: 1px solid #454444;
     padding: 15px;
     position: fixed;
-    top: 180px;
-    right: calc(50% - 470px); /* Keeps fixed sidebar aligned with page body */
+    top: 140px;
+    right: calc(50% - 480px + 20px);
     z-index: 100;
 }
 
 #side_nav ul {
-    list-style-type: disc;
+    list-style: disc;
     padding-left: 1.2em;
     margin: 0;
 }
 
-#side_nav ul ul {
-    list-style-type: square;
-    margin-left: 0.8em;
-}
-
-#side_nav ul ul ul {
-    list-style-type: circle;
-    margin-left: 0.8em;
-}
-
 #side_nav li {
     font-size: 85%;
-    margin-bottom: 0.2em;
-    color: #006400;
+    margin-bottom: 0.3em;
+    color: #2e7d32;
 }
 
-#side_nav a, aside p.side_link a {
+#side_nav ul ul {
+    list-style-type: circle;
+    margin-left: 1em;
+}
+
+#side_nav a {
     color: #0000ee;
     text-decoration: underline;
     font-weight: normal;
 }
 
-#side_nav a:hover, aside p.side_link a:hover {
-    color: #00008b;
+#side_nav a:hover {
+    color: #02027c;
 }
 
 aside p.side_link {
@@ -169,9 +164,13 @@ aside p.side_link {
     font-size: 80%;
 }
 
+aside p.side_link a {
+    color: #0000ee;
+}
+
 footer {
     clear: both;
-    border-top: 2px solid #006400;
+    border-top: 2px solid green;
     padding: 1em 20px;
     text-align: center;
     background-color: white;
@@ -183,6 +182,6 @@ footer p {
 }
 
 footer a {
-    color: #006400;
+    color: green;
     font-weight: bold;
 }
