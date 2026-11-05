@@ -72,5 +72,37 @@ table.second thead tr:first-child{
 
 table.third {
 
-    
+    border-collapse: collapse;
+
+    caption-side: top;
+
+    color: darkgreen;
+}
+
+table.third caption {
+
+    background-color: lightgreen;
+
+    font-weight: bold;
+
+    padding: 0.5em;
+}
+
+table.third th {
+
+    background-color: lightgreen;
+
+    padding: 0.5em;
+}
+
+table.third td {
+
+    padding: 0.4em 0.8em;
+}
+
+table.third tr {
+
+    border-top: 1px solid red;
+
+    border-bottom: 1px solid red;
 }
