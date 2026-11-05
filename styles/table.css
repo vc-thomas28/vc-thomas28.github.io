@@ -115,19 +115,20 @@ table.second thead tr:first-child {
     border-bottom: 2px solid purple; 
 } 
 
+/*-----------------------------------------------------------*/ 
 table.third {
     border-collapse: collapse;
-    color: green;
+    border: 2px solid orangered;
 }
 
 table.third th, table.third td {
     padding: 0.5em 1em;
-    vertical-align: top;
-    text-align: left;
+    vertical-align: top; 
 }
 
 table.third thead tr:first-child th {
     background-color: yellowgreen;
+    color: darkgreen;
     text-align: center;
     font-weight: bold;
 }
@@ -137,16 +138,10 @@ table.third thead tr:nth-child(2) th {
 }
 
 table.third thead tr:first-child {
-    border-top: 2px solid orangered;
     border-bottom: 2px solid orangered;
 }
 
-table.third tbody tr:first-child {
-    border-top: 2px solid orangered;
-    border-bottom: 2px solid orangered;
-}
-
-table.third tbody tr:nth-child(4) {
+table.third thead tr:last-child {
     border-bottom: 2px solid orangered;
 }
 
@@ -154,15 +149,6 @@ table.third tbody tr:last-child {
     border-bottom: 2px solid orangered;
 }
 
-table.third tr th:first-child,
-table.third tr td:first-child {
-    border-left: 2px solid orangered;
-}
-
-table.third tr th:last-child,
-table.third tr td:last-child {
-    border-right: 2px solid orangered;
-}
 
 @media only screen and (max-width: 425px) { 
     th, td { 
