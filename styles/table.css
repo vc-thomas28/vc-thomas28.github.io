@@ -70,39 +70,106 @@ table.second thead tr:first-child{
 
 } 
 
+html, body { 
+    margin: 1em; 
+    height: 100%; 
+    font-size: 100%; 
+} 
+
+* { 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+} 
+
+/*-----------------------------------------------------------*/ 
+table.first { 
+    border-collapse: separate; 
+    border: 2px solid black;     
+} 
+
+table.first th, table.first td { 
+    border: 2px solid blue; 
+} 
+
+table.first tr:nth-child(odd) { 
+    background-color: lightblue; 
+} 
+
+/*-----------------------------------------------------------*/ 
+table.second {     
+    border-collapse: collapse;  
+    border: 2px solid purple;    
+    caption-side: bottom; 
+} 
+
+table.second th { 
+    background-color: salmon; 
+} 
+
+table.second th, table.second td { 
+    padding: 0.7em;   
+    vertical-align: middle; 
+    border: 2px solid purple; 
+} 
+
+table.second thead tr:first-child {      
+    border-bottom: 2px solid purple; 
+} 
+
 table.third {
-
     border-collapse: collapse;
-
-    caption-side: top;
-
-    color: darkgreen;
+    color: green;
 }
 
-table.third caption {
+table.third th, table.third td {
+    padding: 0.5em 1em;
+    vertical-align: top;
+    text-align: left;
+}
 
-    background-color: lightgreen;
-
+table.third thead tr:first-child th {
+    background-color: yellowgreen;
+    text-align: center;
     font-weight: bold;
-
-    padding: 0.5em;
 }
 
-table.third th {
-
+table.third thead tr:nth-child(2) th {
     background-color: lightgreen;
-
-    padding: 0.5em;
 }
 
-table.third td {
-
-    padding: 0.4em 0.8em;
+table.third thead tr:first-child {
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
 }
 
-table.third tr {
+table.third tbody tr:first-child {
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+}
 
-    border-top: 1px solid red;
+table.third tbody tr:nth-child(4) {
+    border-bottom: 2px solid orangered;
+}
 
-    border-bottom: 1px solid red;
+table.third tbody tr:last-child {
+    border-bottom: 2px solid orangered;
+}
+
+table.third tr th:first-child,
+table.third tr td:first-child {
+    border-left: 2px solid orangered;
+}
+
+table.third tr th:last-child,
+table.third tr td:last-child {
+    border-right: 2px solid orangered;
+}
+
+@media only screen and (max-width: 425px) { 
+    th, td { 
+        display: block; 
+    } 
+    thead, td.number { 
+        display: none; 
+        padding: 0; 
+    }     
 }
